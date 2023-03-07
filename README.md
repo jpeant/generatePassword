@@ -1,4 +1,4 @@
-# generatePassword
+# generatePassword.py
 Generates passwords 8 - 24 characters long at 3 levels of complexity.
 
 ## Level 1
