@@ -1,18 +1,22 @@
-# new-git headline
-Short description
+# generatePassword
+Generates passwords 8 - 24 characters long at 3 levels of complexity.
 
-## Headline 2
+## Level 1
+Alphabets lower and uppercase
 
-> 
+## Level 2
+Level 1 with numerals
 
-## TL;DR 
+## Level 3
+Level 2 with special characters
 
-```console
-$ 
-$ 
-```
+## Length
+8 - 24 characters ONLY.
 
-## Headline 2
+## Usage
+py generatePassword().py
+Generates default settings 8 characters in complexity level 3.
 
+Arguments (Length, complexity level)
 
 
