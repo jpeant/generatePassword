@@ -42,7 +42,7 @@ def main(params):
       charbucket += letters
     elif int(sys.argv[2]) == 2:
       charbucket += letters + numerals
-    elif int(sys.argv[2] >= 3):
+    elif int(sys.argv[2] == 3):
       charbucket += letters + numerals + symbols
   else:
     charbucket += letters + numerals + symbols
