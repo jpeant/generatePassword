@@ -1,5 +1,13 @@
 # generatePassword.py
-Generates passwords 8 - 24 characters long at 3 levels of complexity.
+Generates passwords 8 - 24 characters long at 3 levels of complexity. Default values are for length is 8 and for complexity level is 3.
+
+```console
+$ py generatePassword.py
+R8f,\I^B
+
+$ py generatePassword.py 20 2
+cNV1sDHoqUMWUywzN2vZ
+```
 
 ### Level 1
 Alphabets lower and uppercase
