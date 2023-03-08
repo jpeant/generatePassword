@@ -35,8 +35,7 @@ def main(params):
   else:
     length = 8
     
-# complexity level 1-3, default is 3.
-
+# complexity level 1 - 3, default is 3.
   if len(sys.argv) > 2:
     if int(sys.argv[2]) == 1:
       charbucket += letters
@@ -48,11 +47,11 @@ def main(params):
     charbucket += letters + numerals + symbols
           
 # random character chooser.
-
   for i in range(length):
     password += ''.join(secrets.choice(charbucket))
 
   print(password)
+  #return(password)             # in case using this as a function
   
 if __name__ == '__main__':
     main(sys.argv[1:])
