@@ -28,7 +28,7 @@ Level 1 and numbers
 ### Complexity level 3
 Level 2 and special characters
 
-### Notification
+## Notification
 Still missing exception error and help -file.
 
 
