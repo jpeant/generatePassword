@@ -19,17 +19,17 @@ $ py generatePassword.py 10 3
 XAx9}Gd]"T
 ```
 
-### Level 1
+### Complexity level 1
 Alphabets lower and uppercase
 
-### Level 2
-Level 1 with numerals
+### Complexity level 2
+Level 1 and numbers
 
-### Level 3
-Level 2 with special characters
+### Complexity level 3
+Level 2 and special characters
 
-### Length
-8 - 24 characters ONLY.
+### Notification
+Still missing exception error and help -file.
 
 
 
