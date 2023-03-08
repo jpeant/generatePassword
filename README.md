@@ -9,7 +9,7 @@ R8f,\I^B
 $ py generatePassword.py 20 2
 cNV1sDHoqUMWUywzN2vZ
 
-$ py generatePassword.py 20 2
+$ py generatePassword.py 10 3
 XAx9}Gd]"T
 ```
 
