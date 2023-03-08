@@ -8,8 +8,8 @@
 #   Author: jpeant
 ####################################################
 #   ToDO
-# exception error
-# help
+#   - exception error
+#   - help
 ####################################################
 
 import secrets
