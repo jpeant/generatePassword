@@ -13,8 +13,14 @@
 ####################################################
 
 import secrets
+import random
 import string
 import sys, getopt
+
+def shuffleString(string: str) -> str: 
+    List = list(string)
+    random.shuffle(List)
+    return "".join(List)
 
 def main(params):
   letters = string.ascii_letters
@@ -45,13 +51,16 @@ def main(params):
       charbucket += letters + numerals + symbols
   else:
     charbucket += letters + numerals + symbols
+    
+# shuffleling the characters
+  shuffleString(charbucket)
           
 # random character chooser.
   for i in range(length):
     password += ''.join(secrets.choice(charbucket))
 
-  print(password)
-  #return(password)             # in case using this as a function
+  print(shuffleString(password))
+  #return(shuffleString(password)         # in case using this as a function
   
 if __name__ == '__main__':
     main(sys.argv[1:])
