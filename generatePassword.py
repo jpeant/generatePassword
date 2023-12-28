@@ -1,11 +1,11 @@
 '''
 Generates password string 8-24 charachters long with letters, number and symbols upon complexity level given.
-Uses Shuffle-Randompick-Shuffle (SranS) method.
-    Usage:   generatePassword.py (parameter1, parameter2)
-    Params:   (length 8 - 24, complexity level 1 - 3)
-    Level 1 = letters, Level 2 = L1 + numbers, Level 3 = L2 + symbols
-    Date:   7.3.2023
-    Author: jpeant
+Uses Shuffle-Randompick-Shuffle (SranS) method. Level 1 = letters, Level 2 = L1 + numbers, Level 3 = L2 + symbols.
+
+    Usage:      generatePassword.py optional(parameter1, parameter2)
+    Params:     (length 8 - 24, complexity level 1 - 3)
+    Creation:   7.3.2023
+    Author:     jpeant
 '''
 ####################################################
 #   ToDO
