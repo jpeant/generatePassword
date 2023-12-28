@@ -1,8 +1,8 @@
-# generatePassword.py
+# Password generator in python
 Generates passwords 8 - 24 characters long at 3 levels of complexity. Default values are for length is 8 and for complexity level is 3.
 
 ## Usage
-py generatePassword().py
+py generatePassword.py
 Generates default settings 8 characters in complexity level 3.
 
 Parameters (Length) (Complexity level)
@@ -11,10 +11,16 @@ generatePassword.py (length) (complexity)
 ```console
 $ py generatePassword.py
 R8f,\I^B
+```
 
+Generates 20 characters long and complexity of 2.
+```console
 $ py generatePassword.py 20 2
 cNV1sDHoqUMWUywzN2vZ
+```
 
+Generates 10 characters long and complexity of 3.
+```console
 $ py generatePassword.py 10 3
 XAx9}Gd]"T
 ```
