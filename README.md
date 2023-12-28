@@ -35,8 +35,8 @@ Level 1 and numbers
 Level 2 and special characters
 
 
-### Randomizer
-It takes all the characters and shuffles, randomly chooses the amount given and again shuffles.
+### SranS method
+ Shuffles all the characters and, randomly chooses the amount given and again shuffles.
 
 ## Notification
 Still missing exception error and help -file.
