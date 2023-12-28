@@ -1,11 +1,11 @@
-####################################################
-#   Name:   generatePassword.py
-#   Usage:  py %filename.py 
-#
-#   Params:   (length 8 - 24, complexity level 1 - 3)
-#
-#   Date:   7.3.2023
-#   Author: jpeant
+'''
+Generates password string 8-24 charachters long with letters, number and symbols upon complexity level given.   
+    Usage:   generatePassword.py (parameter1, parameter2)
+    Params:   (length 8 - 24, complexity level 1 - 3)
+    Level 1 = letters, Level 2 = L1 + numbers, Level 3 = L2 + symbols
+    Date:   7.3.2023
+    Author: jpeant
+'''
 ####################################################
 #   ToDO
 #   - exception error
