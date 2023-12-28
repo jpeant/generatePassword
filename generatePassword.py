@@ -1,5 +1,6 @@
 '''
-Generates password string 8-24 charachters long with letters, number and symbols upon complexity level given.   
+Generates password string 8-24 charachters long with letters, number and symbols upon complexity level given.
+Uses Shuffle-Randompick-Shuffle (SranS) method.
     Usage:   generatePassword.py (parameter1, parameter2)
     Params:   (length 8 - 24, complexity level 1 - 3)
     Level 1 = letters, Level 2 = L1 + numbers, Level 3 = L2 + symbols
@@ -24,9 +25,9 @@ def shuffleString(string: str) -> str:
     return "".join(List)
 
 def main(params):
-  letters = string.ascii_letters
-  numerals = string.digits
-  symbols = string.punctuation
+  letters = string.ascii_letters  # uppper and lowercase
+  numerals = string.digits        # numbers
+  symbols = string.punctuation    # symbols
   charbucket = ''
   password = ''
   length = 0
@@ -47,11 +48,11 @@ def main(params):
 # complexity level 1 - 3, default is 3.
   if len(sys.argv) > 2:
     if int(sys.argv[2]) == 1:
-      charbucket += letters
+      charbucket += letters                         # Level 1, just letters
     elif int(sys.argv[2]) == 2:
-      charbucket += letters + numerals
+      charbucket += letters + numerals              # Level 2, letters and numbers
     elif int(sys.argv[2]) >= 3:
-      charbucket += letters + numerals + symbols
+      charbucket += letters + numerals + symbols    # Level 3, letters, numbers and symbols
   else:
     charbucket += letters + numerals + symbols
     
@@ -62,6 +63,7 @@ def main(params):
   for i in range(length):
     password += ''.join(secrets.choice(charbucket))
 
+# shuffle once more before output
   print(shuffleString(password))
   #return(shuffleString(password)         # in case using this as a function
   
