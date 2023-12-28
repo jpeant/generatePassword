@@ -2,7 +2,7 @@
 #   Name:   generatePassword.py
 #   Usage:  py %filename.py 
 #
-#   Args:   (length 8 - 24, complexity level 1 - 3)
+#   Params:   (length 8 - 24, complexity level 1 - 3)
 #
 #   Date:   7.3.2023
 #   Author: jpeant
@@ -17,6 +17,7 @@ import random
 import string
 import sys, getopt
 
+# subprogram. takes string and shuffles characters and returns shuffled string.
 def shuffleString(string: str) -> str: 
     List = list(string)
     random.shuffle(List)
@@ -30,6 +31,7 @@ def main(params):
   password = ''
   length = 0
 
+# first parameter
 # setting length of characters 8 - 24, default is 8.
   if len(sys.argv) > 1:
     if int(sys.argv[1]) <= 7 :
@@ -40,7 +42,8 @@ def main(params):
       length = int(sys.argv[1])
   else:
     length = 8
-    
+
+# second parameter    
 # complexity level 1 - 3, default is 3.
   if len(sys.argv) > 2:
     if int(sys.argv[2]) == 1:
